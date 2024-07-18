@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import TestVue from "../components/TestVue";
+import ElementTest from "../components/ElementTest.vue"
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     name: "test",
     component: TestVue,
   },
+  {
+    path: "/element",
+    name: "element",
+    component: ElementTest,
+  }
 ];
 
 const router = createRouter({
